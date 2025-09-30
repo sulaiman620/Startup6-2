@@ -13,7 +13,7 @@ const Home = () => {
         <BackgroundParticles />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto glass rounded-2xl p-8 md:p-12 animate-scale-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in-down">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 animate-fade-in-down">
               {t("home.hero.title")}
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-2 animate-fade-in-down" style={{ animationDelay: "0.1s" }}>

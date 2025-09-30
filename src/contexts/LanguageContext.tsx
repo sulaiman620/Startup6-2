@@ -21,7 +21,7 @@ const translations = {
     
     // Home Page
     "home.hero.title": "Welcome! To Startup weekend",
-    "home.hero.subtitle": "My work about outside space",
+    "home.hero.subtitle": "Limitless ideas",
     "home.hero.coming": "WE ARE COMING SOON",
     "home.hero.description": "Get ready for a weekend full of creativity, innovation, and entrepreneurship at Startup Weekend Sur!",
     "home.what.title": "What is Startup Weekend?",
