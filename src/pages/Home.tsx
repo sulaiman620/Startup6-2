@@ -3,6 +3,7 @@ import EventTimetable from "@/components/EventTimetable";
 import SponsorsGrid from "@/components/SponsorsGrid";
 import BackgroundParticles from "@/components/BackgroundParticles";
 import { useLanguage } from "@/contexts/LanguageContext";
+import logo from "@/assets/logo.png";
 
 const Home = () => {
   const { t } = useLanguage();
@@ -13,9 +14,9 @@ const Home = () => {
         <BackgroundParticles />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto glass rounded-2xl p-8 md:p-12 animate-scale-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in-down">
-              {t("home.hero.title")}
-            </h1>
+            <div className="flex justify-center mb-6 animate-fade-in-down">
+              <img src={logo} alt="Startup Weekend Sur" className="h-24 md:h-32 w-auto" />
+            </div>
             <p className="text-lg md:text-xl text-white/90 mb-2 animate-fade-in-down" style={{ animationDelay: "0.1s" }}>
               {t("home.hero.subtitle")}
             </p>
