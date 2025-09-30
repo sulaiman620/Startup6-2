@@ -22,13 +22,15 @@ const Registration = () => {
               mentors, judges, and fellow entrepreneurs. Secure your spot today!
             </p>
             <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-              <Button 
-                size="lg" 
-                className="gradient-primary text-white text-lg px-8 py-6 hover:scale-105 transition-all ripple shadow-glow group"
-              >
-                Register for Startup Weekend
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-              </Button>
+              <a href="https://www.techstars.com/" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="gradient-primary text-white text-lg px-8 py-6 hover:scale-105 transition-all ripple shadow-glow group"
+                >
+                  Register for Startup Weekend
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                </Button>
+              </a>
               <p className="text-white/80 mt-4 text-sm animate-glow-pulse">
                 ⚡ Remaining Seats: <span className="font-bold text-xl">{remainingSeats}</span>
               </p>

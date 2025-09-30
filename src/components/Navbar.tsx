@@ -53,9 +53,11 @@ const Navbar = () => {
             >
               {externalLink.label}
             </a>
-            <Button variant="default" size="sm" className="gradient-secondary hover:opacity-90 ripple">
-              Register
-            </Button>
+            <a href="https://www.techstars.com/" target="_blank" rel="noopener noreferrer">
+              <Button variant="default" size="sm" className="gradient-secondary hover:opacity-90 ripple">
+                Register
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,9 +96,11 @@ const Navbar = () => {
             >
               {externalLink.label}
             </a>
-            <Button variant="default" size="sm" className="gradient-secondary hover:opacity-90 mt-4 w-full">
-              Register
-            </Button>
+            <a href="https://www.techstars.com/" target="_blank" rel="noopener noreferrer" className="block">
+              <Button variant="default" size="sm" className="gradient-secondary hover:opacity-90 mt-4 w-full">
+                Register
+              </Button>
+            </a>
           </div>
         )}
       </div>
