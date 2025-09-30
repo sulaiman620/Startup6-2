@@ -14,7 +14,7 @@ const translations = {
   en: {
     // Navbar
     "nav.home": "Home",
-    "nav.residents": "Residents",
+    "nav.residents": "Partners",
     "nav.registration": "Registration",
     "nav.techstarts": "Tech Starts",
     "nav.siteTitle": "Startup Weekend Sur",
@@ -39,8 +39,8 @@ const translations = {
     "home.footer.community": "Community",
     
     // Residents Page
-    "residents.title": "Meet Our Innovators, Mentors, and Leaders",
-    "residents.description": "Discover the brilliant minds guiding Startup Weekend – from dedicated organizers and experienced judges to insightful supervisors, each contributing to an unforgettable journey of innovation.",
+    "residents.title": "Meet Our Partners",
+    "residents.description": "Discover our partners guiding Startup Weekend – from dedicated organizers and experienced judges to insightful supervisors, each contributing to an unforgettable journey of innovation.",
     "residents.organizers": "Organizers",
     "residents.judges": "Judges",
     "residents.supervisors": "Supervisors",
@@ -48,7 +48,7 @@ const translations = {
   ar: {
     // Navbar
     "nav.home": "الرئيسية",
-    "nav.residents": "المقيمون",
+    "nav.residents": "الشركاء",
     "nav.registration": "التسجيل",
     "nav.techstarts": "تك ستارتس",
     "nav.siteTitle": "ستارت أب ويكند صور",
@@ -73,8 +73,8 @@ const translations = {
     "home.footer.community": "المجتمع",
     
     // Residents Page
-    "residents.title": "تعرف على المبتكرين والموجهين والقادة لدينا",
-    "residents.description": "اكتشف العقول اللامعة التي توجه ستارت أب ويكند – من المنظمين المتفانين والحكام ذوي الخبرة إلى المشرفين البصيرين، كل منهم يساهم في رحلة ابتكار لا تُنسى.",
+    "residents.title": "تعرف على شركائنا",
+    "residents.description": "اكتشف شركاءنا الذين يقودون ستارت أب ويكند – من المنظمين المتفانين والحكام ذوي الخبرة إلى المشرفين البصيرين، كل منهم يساهم في رحلة ابتكار لا تُنسى.",
     "residents.organizers": "المنظمون",
     "residents.judges": "الحكام",
     "residents.supervisors": "المشرفون",
