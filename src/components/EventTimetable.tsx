@@ -81,7 +81,7 @@ const EventTimetable = () => {
               key={index}
               className="min-w-full relative"
             >
-              <div className="relative h-[400px] md:h-[500px]">
+              <div className="relative aspect-video w-full">
                 <img
                   src={slide.image}
                   alt={t(slide.titleKey)}
@@ -91,9 +91,9 @@ const EventTimetable = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                 
                 {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
                   <p className="text-sm md:text-base font-semibold mb-2 text-accent">{t(slide.dateKey)}</p>
-                  <h3 className="text-2xl md:text-4xl font-bold">{t(slide.titleKey)}</h3>
+                  <h3 className="text-xl md:text-4xl font-bold">{t(slide.titleKey)}</h3>
                 </div>
               </div>
             </div>
