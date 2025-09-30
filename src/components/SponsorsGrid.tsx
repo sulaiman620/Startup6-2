@@ -1,37 +1,39 @@
-import { Code2, Rocket, Zap, Users, Sparkles, Trophy, Target, Lightbulb, Globe, Star, Award, Heart } from "lucide-react";
+import smesAuthority from "@/assets/sponsors/smes-authority.png";
+import ministryCulture from "@/assets/sponsors/ministry-culture.png";
+import googleStartups from "@/assets/sponsors/google-startups.png";
+import deel from "@/assets/sponsors/deel.png";
+import brex from "@/assets/sponsors/brex.png";
+import risingOmani from "@/assets/sponsors/rising-omani.png";
+import riyada from "@/assets/sponsors/riyada.png";
 
 const SponsorsGrid = () => {
   const sponsors = [
-    { Icon: Code2, name: "TechCorp" },
-    { Icon: Rocket, name: "InnovateLab" },
-    { Icon: Zap, name: "QuickStart" },
-    { Icon: Users, name: "TeamHub" },
-    { Icon: Sparkles, name: "BrightIdeas" },
-    { Icon: Trophy, name: "WinVentures" },
-    { Icon: Target, name: "FocusGroup" },
-    { Icon: Lightbulb, name: "ThinkTank" },
-    { Icon: Globe, name: "GlobalTech" },
-    { Icon: Star, name: "StarterKit" },
-    { Icon: Award, name: "Excellence" },
-    { Icon: Heart, name: "PassionProjects" },
+    { logo: smesAuthority, name: "SMEs Development Authority" },
+    { logo: ministryCulture, name: "Ministry of Culture" },
+    { logo: googleStartups, name: "Google for Startups" },
+    { logo: deel, name: "Deel" },
+    { logo: brex, name: "Brex" },
+    { logo: risingOmani, name: "The Rising Omani Startups Programme" },
+    { logo: riyada, name: "Riyada" },
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
       {sponsors.map((sponsor, index) => {
-        const Icon = sponsor.Icon;
         return (
           <div
             key={index}
-            className="flex items-center justify-center p-8 bg-card rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 group cursor-pointer animate-fade-in-up"
+            className="flex items-center justify-center p-6 md:p-8 bg-card rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 group cursor-pointer animate-fade-in-up hover-lift"
             style={{ 
-              animationDelay: `${index * 0.05}s`,
+              animationDelay: `${index * 0.1}s`,
               transformStyle: "preserve-3d",
             }}
           >
-            <Icon
-              size={48}
-              className="text-muted group-hover:text-primary transition-all duration-500 group-hover:rotate-[360deg] group-hover:scale-110"
+            <img
+              src={sponsor.logo}
+              alt={sponsor.name}
+              className="w-full h-auto max-h-20 object-contain transition-all duration-700 group-hover:scale-110 group-hover:brightness-110 filter grayscale group-hover:grayscale-0"
+              loading="lazy"
             />
           </div>
         );
