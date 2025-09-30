@@ -8,8 +8,8 @@ import riyada from "@/assets/sponsors/riyada.png";
 
 const SponsorsGrid = () => {
   const sponsors = [
-    { logo: smesAuthority, name: "SMEs Development Authority" },
     { logo: ministryCulture, name: "Ministry of Culture" },
+    { logo: smesAuthority, name: "SMEs Development Authority" },
     { logo: googleStartups, name: "Google for Startups" },
     { logo: deel, name: "Deel" },
     { logo: brex, name: "Brex" },
