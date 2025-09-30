@@ -10,11 +10,11 @@ const SponsorsGrid = () => {
   const sponsors = [
     { logo: ministryCulture, name: "Ministry of Culture" },
     { logo: smesAuthority, name: "SMEs Development Authority" },
+    { logo: riyada, name: "Riyada" },
+    { logo: risingOmani, name: "The Rising Omani Startups Programme" },
     { logo: googleStartups, name: "Google for Startups" },
     { logo: deel, name: "Deel" },
     { logo: brex, name: "Brex" },
-    { logo: risingOmani, name: "The Rising Omani Startups Programme" },
-    { logo: riyada, name: "Riyada" },
   ];
 
   return (
