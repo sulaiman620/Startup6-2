@@ -8,33 +8,18 @@ const EventTimetable = () => {
   const slides = [
     {
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop",
-      title: "Opening Ceremony",
-      date: "Day 1 - 6:00 PM"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=600&fit=crop",
-      title: "Team Formation",
-      date: "Day 1 - 7:00 PM"
+      title: "Day 1 - Kickoff & Team Formation",
+      date: "Friday Evening"
     },
     {
       image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop",
-      title: "Workshops & Mentoring",
-      date: "Day 2 - 9:00 AM"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&h=600&fit=crop",
-      title: "Building & Development",
-      date: "Day 2 - 2:00 PM"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&h=600&fit=crop",
-      title: "Final Presentations",
-      date: "Day 3 - 5:00 PM"
+      title: "Day 2 - Building & Development",
+      date: "Saturday All Day"
     },
     {
       image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&h=600&fit=crop",
-      title: "Awards Ceremony",
-      date: "Day 3 - 8:00 PM"
+      title: "Day 3 - Presentations & Awards",
+      date: "Sunday Evening"
     },
   ];
 
