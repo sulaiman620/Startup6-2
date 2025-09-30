@@ -1,5 +1,4 @@
 import smesAuthority from "@/assets/sponsors/smes-authority.png";
-import ministryCulture from "@/assets/sponsors/ministry-culture.png";
 import googleStartups from "@/assets/sponsors/google-startups.png";
 import deel from "@/assets/sponsors/deel.png";
 import brex from "@/assets/sponsors/brex.png";
@@ -8,7 +7,6 @@ import riyada from "@/assets/sponsors/riyada.png";
 
 const SponsorsGrid = () => {
   const sponsors = [
-    { logo: ministryCulture, name: "Ministry of Culture" },
     { logo: smesAuthority, name: "SMEs Development Authority" },
     { logo: riyada, name: "Riyada" },
     { logo: risingOmani, name: "The Rising Omani Startups Programme" },
