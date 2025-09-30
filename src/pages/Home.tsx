@@ -16,18 +16,18 @@ const Home = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 animate-fade-in-down">
               {t("home.hero.title")}
             </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-2 animate-fade-in-down" style={{ animationDelay: "0.1s" }}>
+            <p className="text-lg md:text-xl text-white/90 mb-6 animate-fade-in-down" style={{ animationDelay: "0.1s" }}>
               {t("home.hero.subtitle")}
             </p>
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-6 animate-fade-in-down" style={{ animationDelay: "0.2s" }}>
-              {t("home.hero.coming")}
-            </h2>
-            <p className="text-white/80 mb-8 animate-fade-in-down" style={{ animationDelay: "0.3s" }}>
+            <p className="text-white/80 mb-8 animate-fade-in-down" style={{ animationDelay: "0.2s" }}>
               {t("home.hero.description")}
             </p>
-            <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <div className="animate-fade-in-up mb-6" style={{ animationDelay: "0.3s" }}>
               <CountdownTimer />
             </div>
+            <h2 className="text-2xl md:text-4xl font-bold text-white animate-fade-in-down" style={{ animationDelay: "0.4s" }}>
+              {t("home.hero.coming")}
+            </h2>
           </div>
         </div>
       </section>
