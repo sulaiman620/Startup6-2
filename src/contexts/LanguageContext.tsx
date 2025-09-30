@@ -54,7 +54,7 @@ const translations = {
     "nav.siteTitle": "ستارت أب ويكند صور",
     
     // Home Page
-    "home.hero.title": "مرحباً بكم في نهاية أسبوع الشركات الناشئة",
+    "home.hero.title": "مرحباً بكم في ستارت أب ويكند",
     "home.hero.subtitle": "عملي حول الفضاء الخارجي",
     "home.hero.coming": "قريباً",
     "home.hero.description": "استعد لعطلة نهاية أسبوع مليئة بالإبداع والابتكار وريادة الأعمال في ستارت أب ويكند صور!",
