@@ -1,71 +1,128 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
+import { useState, useEffect } from "react";
 
 const EventTimetable = () => {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const events = [
-    { date: "22 Jun 1951", title: "First dogs in space" },
-    { date: "04 Oct 1957", title: "First artificial satellite" },
-    { date: "03 Feb 1966", title: "Moon landing on the Moon" },
-    { date: "20 Jul 1969", title: "First human on the Moon" },
-    { date: "17 Apr 1976", title: "Closest flyby of the Sun" },
-    { date: "04 Dec 1978", title: "First orbital exploration of Venus" },
-    { date: "19 Feb 1986", title: "First inhabited space station" },
-    { date: "08 Aug 1989", title: "First astrometric satellite" },
-    { date: "20 Nov 1998", title: "First multinational space station" },
+  // Placeholder images - replace with your actual event images
+  const slides = [
+    {
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop",
+      title: "Opening Ceremony",
+      date: "Day 1 - 6:00 PM"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=600&fit=crop",
+      title: "Team Formation",
+      date: "Day 1 - 7:00 PM"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop",
+      title: "Workshops & Mentoring",
+      date: "Day 2 - 9:00 AM"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&h=600&fit=crop",
+      title: "Building & Development",
+      date: "Day 2 - 2:00 PM"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&h=600&fit=crop",
+      title: "Final Presentations",
+      date: "Day 3 - 5:00 PM"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&h=600&fit=crop",
+      title: "Awards Ceremony",
+      date: "Day 3 - 8:00 PM"
+    },
   ];
 
-  const scroll = (direction: "left" | "right") => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 300;
-      scrollContainerRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
+  // Auto-advance every 10 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 10000);
+
+    return () => clearInterval(timer);
+  }, [slides.length]);
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
+  const goToPrevious = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const goToNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
   return (
-    <div className="relative">
+    <div className="relative max-w-6xl mx-auto">
+      {/* Navigation Arrows */}
       <button
-        onClick={() => scroll("left")}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-secondary text-white p-4 rounded-full hover:bg-accent transition-all hover:scale-110 shadow-lg"
-        aria-label="Scroll left"
+        onClick={goToPrevious}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-secondary/80 backdrop-blur-sm text-secondary-foreground p-3 rounded-full hover:bg-secondary transition-all hover:scale-110 shadow-lg"
+        aria-label="Previous slide"
       >
         <ChevronLeft size={24} />
       </button>
 
       <button
-        onClick={() => scroll("right")}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-secondary text-white p-4 rounded-full hover:bg-accent transition-all hover:scale-110 shadow-lg"
-        aria-label="Scroll right"
+        onClick={goToNext}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-secondary/80 backdrop-blur-sm text-secondary-foreground p-3 rounded-full hover:bg-secondary transition-all hover:scale-110 shadow-lg"
+        aria-label="Next slide"
       >
         <ChevronRight size={24} />
       </button>
 
-      <div
-        ref={scrollContainerRef}
-        className="overflow-x-auto scrollbar-hide px-16 py-8"
-        style={{ scrollSnapType: "x mandatory" }}
-      >
-        <div className="flex gap-4 min-w-max">
-          {events.map((event, index) => (
+      {/* Slides Container */}
+      <div className="relative overflow-hidden rounded-2xl shadow-xl">
+        <div
+          className="flex transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
+          {slides.map((slide, index) => (
             <div
               key={index}
-              className="relative scroll-snap-align-start animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="min-w-full relative"
             >
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 hover-glow min-w-[200px] border border-border">
-                <p className="text-sm text-primary font-semibold mb-2">{event.date}</p>
-                <p className="text-sm text-foreground">{event.title}</p>
+              <div className="relative h-[400px] md:h-[500px]">
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-full h-full object-cover"
+                />
+                {/* Overlay with gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <p className="text-sm md:text-base font-semibold mb-2 text-accent">{slide.date}</p>
+                  <h3 className="text-2xl md:text-4xl font-bold">{slide.title}</h3>
+                </div>
               </div>
-              {index < events.length - 1 && (
-                <div className="absolute top-1/2 right-[-16px] w-4 h-0.5 bg-accent" />
-              )}
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Dots Indicator */}
+      <div className="flex justify-center gap-2 mt-6">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentSlide
+                ? "bg-secondary w-8"
+                : "bg-muted hover:bg-muted-foreground"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
       </div>
     </div>
   );
