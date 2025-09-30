@@ -77,7 +77,7 @@ const translations = {
     "residents.description": "اكتشف شركاءنا الذين يقودون ستارت أب ويكند – من المنظمين المتفانين والحكام ذوي الخبرة إلى المشرفين البصيرين، كل منهم يساهم في رحلة ابتكار لا تُنسى.",
     "residents.organizers": "المنظمون",
     "residents.judges": "الحكام",
-    "residents.supervisors": "المشرفون",
+    "residents.supervisors": "الموجهون",
   },
 };
 
