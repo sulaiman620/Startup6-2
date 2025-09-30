@@ -3,8 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Menu, X, Languages } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
-import vetLogo from "@/assets/vet-logo.png";
+import combinedLogo from "@/assets/combined-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,9 +34,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass animate-fade-in-down">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 md:h-24">
-          <NavLink to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src={logo} alt="Startup Weekend Sur" className="h-16 md:h-20 w-auto object-contain rounded-lg" />
-            <img src={vetLogo} alt="التعليم والتدريب المهني" className="h-12 md:h-16 w-auto object-contain" />
+          <NavLink to="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <img src={combinedLogo} alt="Techstars Startup Weekend Sur" className="h-16 md:h-20 w-auto object-contain rounded-2xl" />
           </NavLink>
 
           {/* Desktop Navigation */}
