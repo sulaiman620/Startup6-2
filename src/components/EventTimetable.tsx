@@ -1,25 +1,27 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const EventTimetable = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const { t } = useLanguage();
 
   // Placeholder images - replace with your actual event images
   const slides = [
     {
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop",
-      title: "Day 1 - Kickoff & Team Formation",
-      date: "Friday Evening"
+      title: t("home.timetable.day1.title"),
+      date: t("home.timetable.day1.date")
     },
     {
       image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop",
-      title: "Day 2 - Building & Development",
-      date: "Saturday All Day"
+      title: t("home.timetable.day2.title"),
+      date: t("home.timetable.day2.date")
     },
     {
       image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&h=600&fit=crop",
-      title: "Day 3 - Presentations & Awards",
-      date: "Sunday Evening"
+      title: t("home.timetable.day3.title"),
+      date: t("home.timetable.day3.date")
     },
   ];
 
