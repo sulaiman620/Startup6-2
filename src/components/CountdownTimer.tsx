@@ -30,13 +30,22 @@ const CountdownTimer = () => {
     <div className="flex flex-col items-center gap-2">
       <div 
         key={value}
-        className="bg-white rounded-xl p-4 md:p-6 shadow-lg min-w-[70px] md:min-w-[100px] animate-[pulse_1s_ease-in-out]"
+        className="bg-white rounded-xl p-4 md:p-6 shadow-lg min-w-[70px] md:min-w-[100px] animate-[scale-pulse_1s_ease-in-out]"
+        style={{
+          animation: 'scale-pulse 1s ease-in-out'
+        }}
       >
         <span className="text-3xl md:text-5xl font-bold text-primary block text-center">
           {value.toString().padStart(2, '0')}
         </span>
       </div>
       <span className="text-white text-xs md:text-base font-medium uppercase tracking-wide">{label}</span>
+      <style>{`
+        @keyframes scale-pulse {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+        }
+      `}</style>
     </div>
   );
 
