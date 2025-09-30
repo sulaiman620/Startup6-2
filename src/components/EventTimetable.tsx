@@ -4,26 +4,31 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const EventTimetable = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   // Placeholder images - replace with your actual event images
   const slides = [
     {
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop",
-      title: t("home.timetable.day1.title"),
-      date: t("home.timetable.day1.date")
+      titleKey: "home.timetable.day1.title",
+      dateKey: "home.timetable.day1.date"
     },
     {
       image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop",
-      title: t("home.timetable.day2.title"),
-      date: t("home.timetable.day2.date")
+      titleKey: "home.timetable.day2.title",
+      dateKey: "home.timetable.day2.date"
     },
     {
       image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&h=600&fit=crop",
-      title: t("home.timetable.day3.title"),
-      date: t("home.timetable.day3.date")
+      titleKey: "home.timetable.day3.title",
+      dateKey: "home.timetable.day3.date"
     },
   ];
+
+  // Reset to first slide when language changes
+  useEffect(() => {
+    setCurrentSlide(0);
+  }, [language]);
 
   // Auto-advance every 10 seconds
   useEffect(() => {
@@ -79,7 +84,7 @@ const EventTimetable = () => {
               <div className="relative h-[400px] md:h-[500px]">
                 <img
                   src={slide.image}
-                  alt={slide.title}
+                  alt={t(slide.titleKey)}
                   className="w-full h-full object-cover"
                 />
                 {/* Overlay with gradient */}
@@ -87,8 +92,8 @@ const EventTimetable = () => {
                 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                  <p className="text-sm md:text-base font-semibold mb-2 text-accent">{slide.date}</p>
-                  <h3 className="text-2xl md:text-4xl font-bold">{slide.title}</h3>
+                  <p className="text-sm md:text-base font-semibold mb-2 text-accent">{t(slide.dateKey)}</p>
+                  <h3 className="text-2xl md:text-4xl font-bold">{t(slide.titleKey)}</h3>
                 </div>
               </div>
             </div>
