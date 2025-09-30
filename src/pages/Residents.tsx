@@ -97,14 +97,23 @@ const Residents = () => {
         </div>
 
         <Tabs defaultValue="organizers" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12">
-            <TabsTrigger value="organizers" className="data-[state=active]:bg-secondary">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12 bg-card border border-border p-1">
+            <TabsTrigger 
+              value="organizers" 
+              className="data-[state=active]:bg-secondary data-[state=active]:text-secondary-foreground"
+            >
               Organizers
             </TabsTrigger>
-            <TabsTrigger value="judges" className="data-[state=active]:bg-secondary">
+            <TabsTrigger 
+              value="judges" 
+              className="data-[state=active]:bg-secondary data-[state=active]:text-secondary-foreground"
+            >
               Judges
             </TabsTrigger>
-            <TabsTrigger value="supervisors" className="data-[state=active]:bg-secondary">
+            <TabsTrigger 
+              value="supervisors" 
+              className="data-[state=active]:bg-secondary data-[state=active]:text-secondary-foreground"
+            >
               Supervisors
             </TabsTrigger>
           </TabsList>
