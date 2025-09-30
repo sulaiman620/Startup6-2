@@ -36,7 +36,7 @@ const CountdownTimer = () => {
   );
 
   return (
-    <div className="flex gap-4 md:gap-6 justify-center">
+    <div className="flex gap-4 md:gap-6 justify-center items-center w-full">
       <TimeUnit value={timeLeft.days} label="Days" />
       <TimeUnit value={timeLeft.hours} label="Hours" />
       <TimeUnit value={timeLeft.minutes} label="Minutes" />
