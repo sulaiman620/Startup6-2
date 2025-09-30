@@ -8,11 +8,11 @@ const Navbar = () => {
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/residents", label: "Residents" },
+    { to: "/registration", label: "Registration" },
   ];
 
   const externalLinks = [
-    { href: "https://www.techstars.com/", label: "Tech Starts" },
-    { href: "https://www.techstars.com/", label: "Registration" }
+    { href: "https://www.techstars.com/", label: "Tech Starts" }
   ];
 
   return (
