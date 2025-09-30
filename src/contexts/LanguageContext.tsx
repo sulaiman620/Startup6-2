@@ -51,6 +51,26 @@ const translations = {
     "residents.judges": "Judges",
     "residents.supervisors": "Mentors",
     
+    // Roles - Organizers
+    "role.leadOrganizer": "Lead Organizer",
+    "role.logisticsCoordinator": "Logistics Coordinator",
+    "role.marketingDirector": "Marketing Director",
+    "role.volunteerManager": "Volunteer Manager",
+    
+    // Roles - Judges
+    "role.ventureCapitalist": "Venture Capitalist",
+    "role.angelInvestor": "Angel Investor",
+    "role.techInnovator": "Tech Innovator",
+    "role.startupMentor": "Startup Mentor",
+    "role.legalAdvisor": "Legal Advisor",
+    "role.productDesignLead": "Product Design Lead",
+    
+    // Roles - Supervisors
+    "role.technicalSupervisor": "Technical Supervisor (AI/ML)",
+    "role.businessModelSupervisor": "Business Model Supervisor",
+    "role.pitchCoach": "Pitch Coach",
+    "role.designThinkingSupervisor": "Design Thinking Supervisor",
+    
     // Registration Page
     "registration.title": "Ready to Innovate? Register Now!",
     "registration.description": "Join us for an exhilarating weekend of innovation, networking, and launching your startup idea. Don't miss this opportunity to connect with mentors, judges, and fellow entrepreneurs. Secure your spot today!",
@@ -100,6 +120,26 @@ const translations = {
     "residents.organizers": "المنظمون",
     "residents.judges": "الحكام",
     "residents.supervisors": "الموجهون",
+    
+    // Roles - Organizers
+    "role.leadOrganizer": "المنظم الرئيسي",
+    "role.logisticsCoordinator": "منسق اللوجستيات",
+    "role.marketingDirector": "مدير التسويق",
+    "role.volunteerManager": "مدير المتطوعين",
+    
+    // Roles - Judges
+    "role.ventureCapitalist": "مستثمر رأس المال المغامر",
+    "role.angelInvestor": "مستثمر ملاك",
+    "role.techInnovator": "مبتكر تقني",
+    "role.startupMentor": "موجه الشركات الناشئة",
+    "role.legalAdvisor": "مستشار قانوني",
+    "role.productDesignLead": "قائد تصميم المنتج",
+    
+    // Roles - Supervisors
+    "role.technicalSupervisor": "مشرف تقني (ذكاء اصطناعي/تعلم آلي)",
+    "role.businessModelSupervisor": "مشرف نموذج الأعمال",
+    "role.pitchCoach": "مدرب العروض التقديمية",
+    "role.designThinkingSupervisor": "مشرف التفكير التصميمي",
     
     // Registration Page
     "registration.title": "هل أنت مستعد للابتكار؟ سجل الآن!",

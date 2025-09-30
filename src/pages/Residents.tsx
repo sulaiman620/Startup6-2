@@ -25,25 +25,25 @@ const Residents = () => {
   const organizers = [
     {
       name: "أحمد الحارثي",
-      role: "Lead Organizer",
+      role: t("role.leadOrganizer"),
       description: "أحمد قائد ديناميكي ذو سجل حافل في تنمية المجتمع وإدارة المشاريع.",
       imagePath: ahmedImage,
     },
     {
       name: "فاطمة المقبالي",
-      role: "Logistics Coordinator",
+      role: t("role.logisticsCoordinator"),
       description: "فاطمة تتفوق في الجوانب التشغيلية، من إعداد المكان إلى تخصيص الموارد.",
       imagePath: fatimaImage,
     },
     {
       name: "سارة البلوشي",
-      role: "Marketing Director",
+      role: t("role.marketingDirector"),
       description: "سارة تقود استراتيجية التواصل والتسويق، مما يضمن وصول الحدث لأفضل المواهب.",
       imagePath: sarahImage,
     },
     {
       name: "خالد الشحي",
-      role: "Volunteer Manager",
+      role: t("role.volunteerManager"),
       description: "خالد هو قلب فريق المتطوعين، يقوم بتوظيف وتنسيق الأفراد المخلصين.",
       imagePath: khalidImage,
     },
@@ -52,37 +52,37 @@ const Residents = () => {
   const judges = [
     {
       name: "د. ليلى العامري",
-      role: "Venture Capitalist",
+      role: t("role.ventureCapitalist"),
       description: "د. ليلى تجلب خبرة واسعة في الاستثمار في الشركات الناشئة والإرشاد الاستراتيجي.",
       imagePath: laylaImage,
     },
     {
       name: "محمد الهنائي",
-      role: "Angel Investor",
+      role: t("role.angelInvestor"),
       description: "رائد أعمال متسلسل ناجح، محمد يكرس الآن وقته لتوجيه الشركات الناشئة والاستثمار فيها.",
       imagePath: mohammedImage,
     },
     {
       name: "منى الفارسي",
-      role: "Tech Innovator",
+      role: t("role.techInnovator"),
       description: "منى شخصية رائدة في تطوير الذكاء الاصطناعي، معروفة بتطبيقاتها الرائدة.",
       imagePath: monaImage,
     },
     {
       name: "عمر البحري",
-      role: "Startup Mentor",
+      role: t("role.startupMentor"),
       description: "عمر قد وجه العديد من الشركات الناشئة من خلال تحدياتها الأولية بخبرته ونصائحه.",
       imagePath: omarImage,
     },
     {
       name: "نورة الكلباني",
-      role: "Legal Advisor",
+      role: t("role.legalAdvisor"),
       description: "كمحامية متمرسة، نورة تقدم التوجيه الأساسي حول حماية المشاريع الجديدة.",
       imagePath: nouraImage,
     },
     {
       name: "يوسف الرواحي",
-      role: "Product Design Lead",
+      role: t("role.productDesignLead"),
       description: "يوسف متخصص في التصميم المتمحور حول المستخدم، مساعداً الفرق على بناء منتجات بديهية.",
       imagePath: youssefImage,
     },
@@ -91,25 +91,25 @@ const Residents = () => {
   const supervisors = [
     {
       name: "عائشة السعيدي",
-      role: "Technical Supervisor (AI/ML)",
+      role: t("role.technicalSupervisor"),
       description: "عائشة تقدم إرشاداً تقنياً عميقاً في الذكاء الاصطناعي والتعلم الآلي.",
       imagePath: aishaImage,
     },
     {
       name: "طارق المعمري",
-      role: "Business Model Supervisor",
+      role: t("role.businessModelSupervisor"),
       description: "طارق متخصص في نماذج الأعمال والأطر المالية، يساعد الفرق على توضيح عرض القيمة.",
       imagePath: tariqImage,
     },
     {
       name: "ريم الشكيلي",
-      role: "Pitch Coach",
+      role: t("role.pitchCoach"),
       description: "ريم خبيرة في التحدث أمام الجمهور والعروض التقديمية، تدرب الفرق على تقديم عروض مقنعة.",
       imagePath: reemImage,
     },
     {
       name: "حمد الغافري",
-      role: "Design Thinking Supervisor",
+      role: t("role.designThinkingSupervisor"),
       description: "حمد يسهل ورش عمل التفكير التصميمي، يساعد الفرق على التعاطف مع المستخدمين وتطوير الحلول.",
       imagePath: hamadImage,
     },
