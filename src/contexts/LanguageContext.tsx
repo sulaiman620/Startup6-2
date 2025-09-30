@@ -102,7 +102,7 @@ const translations = {
     "residents.supervisors": "الموجهون",
     
     // Registration Page
-    "registration.title": "هل أنت مستعد للابتكار؟\nسجل الآن!",
+    "registration.title": "هل أنت مستعد للابتكار؟ سجل الآن!",
     "registration.description": "انضم إلينا في عطلة نهاية أسبوع مثيرة من الابتكار والتواصل وإطلاق فكرة شركتك الناشئة. لا تفوت هذه الفرصة للتواصل مع الموجهين والحكام ورواد الأعمال الآخرين. احجز مكانك اليوم!",
     "registration.button": "التسجيل في ستارت أب ويكند",
     
