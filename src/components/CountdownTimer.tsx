@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CountdownTimer = () => {
+  const { t } = useLanguage();
   const targetDate = new Date("2025-10-30T00:00:00").getTime();
   
   const [timeLeft, setTimeLeft] = useState({
@@ -51,10 +53,10 @@ const CountdownTimer = () => {
 
   return (
     <div className="flex gap-4 md:gap-6 justify-center items-center w-full">
-      <TimeUnit value={timeLeft.days} label="Days" />
-      <TimeUnit value={timeLeft.hours} label="Hours" />
-      <TimeUnit value={timeLeft.minutes} label="Minutes" />
-      <TimeUnit value={timeLeft.seconds} label="Seconds" />
+      <TimeUnit value={timeLeft.days} label={t("countdown.days")} />
+      <TimeUnit value={timeLeft.hours} label={t("countdown.hours")} />
+      <TimeUnit value={timeLeft.minutes} label={t("countdown.minutes")} />
+      <TimeUnit value={timeLeft.seconds} label={t("countdown.seconds")} />
     </div>
   );
 };

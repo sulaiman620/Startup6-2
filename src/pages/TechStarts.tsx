@@ -1,7 +1,9 @@
 import { Rocket, Code, Lightbulb, Zap, Target, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const TechStarts = () => {
+  const { t } = useLanguage();
   const startups = [
     {
       Icon: Rocket,
@@ -40,10 +42,10 @@ const TechStarts = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in-down">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
-            Tech Startups
+            {t("techstarts.title")}
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover innovative startups and groundbreaking ideas from our community
+            {t("techstarts.description")}
           </p>
         </div>
 
@@ -66,7 +68,7 @@ const TechStarts = () => {
                   {startup.description}
                 </p>
                 <Button variant="outline" className="w-full hover:bg-accent hover:text-accent-foreground transition-all ripple">
-                  Read More
+                  {t("techstarts.readmore")}
                 </Button>
               </div>
             );

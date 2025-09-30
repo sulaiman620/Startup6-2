@@ -38,12 +38,28 @@ const translations = {
     "home.footer.about": "About",
     "home.footer.community": "Community",
     
+    // Countdown Timer
+    "countdown.days": "Days",
+    "countdown.hours": "Hours",
+    "countdown.minutes": "Minutes",
+    "countdown.seconds": "Seconds",
+    
     // Residents Page
     "residents.title": "Meet Our Partners",
-    "residents.description": "Discover our partners guiding Startup Weekend – from dedicated organizers and experienced judges to insightful supervisors, each contributing to an unforgettable journey of innovation.",
+    "residents.description": "Discover our partners guiding Startup Weekend – from dedicated organizers and experienced judges to insightful mentors, each contributing to an unforgettable journey of innovation.",
     "residents.organizers": "Organizers",
     "residents.judges": "Judges",
-    "residents.supervisors": "Supervisors",
+    "residents.supervisors": "Mentors",
+    
+    // Registration Page
+    "registration.title": "Ready to Innovate? Register Now!",
+    "registration.description": "Join us for an exhilarating weekend of innovation, networking, and launching your startup idea. Don't miss this opportunity to connect with mentors, judges, and fellow entrepreneurs. Secure your spot today!",
+    "registration.button": "Register for Startup Weekend",
+    
+    // Tech Starts Page
+    "techstarts.title": "Tech Startups",
+    "techstarts.description": "Discover innovative startups and groundbreaking ideas from our community",
+    "techstarts.readmore": "Read More",
   },
   ar: {
     // Navbar
@@ -72,12 +88,28 @@ const translations = {
     "home.footer.about": "عن",
     "home.footer.community": "المجتمع",
     
+    // Countdown Timer
+    "countdown.days": "أيام",
+    "countdown.hours": "ساعات",
+    "countdown.minutes": "دقائق",
+    "countdown.seconds": "ثواني",
+    
     // Residents Page
     "residents.title": "تعرف على شركائنا",
     "residents.description": "اكتشف شركاءنا الذين يقودون ستارت أب ويكند – من المنظمين المتفانين والحكام ذوي الخبرة إلى الموجهين، كل منهم يساهم في رحلة ابتكار لا تُنسى.",
     "residents.organizers": "المنظمون",
     "residents.judges": "الحكام",
     "residents.supervisors": "الموجهون",
+    
+    // Registration Page
+    "registration.title": "هل أنت مستعد للابتكار؟ سجل الآن!",
+    "registration.description": "انضم إلينا في عطلة نهاية أسبوع مثيرة من الابتكار والتواصل وإطلاق فكرة شركتك الناشئة. لا تفوت هذه الفرصة للتواصل مع الموجهين والحكام ورواد الأعمال الآخرين. احجز مكانك اليوم!",
+    "registration.button": "التسجيل في ستارت أب ويكند",
+    
+    // Tech Starts Page
+    "techstarts.title": "الشركات الناشئة التقنية",
+    "techstarts.description": "اكتشف الشركات الناشئة المبتكرة والأفكار الرائدة من مجتمعنا",
+    "techstarts.readmore": "اقرأ المزيد",
   },
 };
 
