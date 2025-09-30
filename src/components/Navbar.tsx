@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 md:h-24">
           <NavLink to="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <img src={combinedLogo} alt="Techstars Startup Weekend Sur" className="h-16 md:h-20 w-auto object-contain rounded-2xl" />
+            <img src={combinedLogo} alt="Techstars Startup Weekend Sur" className="h-12 md:h-16 w-auto object-contain rounded-2xl" />
           </NavLink>
 
           {/* Desktop Navigation */}
