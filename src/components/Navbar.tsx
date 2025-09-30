@@ -1,18 +1,21 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Languages } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { language, toggleLanguage, t } = useLanguage();
 
   const navLinks = [
-    { to: "/", label: "Home" },
-    { to: "/residents", label: "Residents" },
-    { to: "/registration", label: "Registration" },
+    { to: "/", label: t("nav.home") },
+    { to: "/residents", label: t("nav.residents") },
+    { to: "/registration", label: t("nav.registration") },
   ];
 
   const externalLinks = [
-    { href: "https://www.techstars.com/", label: "Tech Starts" }
+    { href: "https://www.techstars.com/", label: t("nav.techstarts") }
   ];
 
   return (
@@ -20,11 +23,20 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <NavLink to="/" className="text-xl font-bold text-primary-foreground hover:text-accent transition-colors">
-            Startup Weekend Sur
+            {t("nav.siteTitle")}
           </NavLink>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
+            <Button
+              onClick={toggleLanguage}
+              variant="ghost"
+              size="sm"
+              className="text-primary-foreground hover:text-accent hover:bg-transparent gap-2"
+            >
+              <Languages className="h-4 w-4" />
+              <span>{language === "en" ? "العربية" : "English"}</span>
+            </Button>
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
@@ -64,6 +76,15 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden py-4 animate-fade-in-down">
+            <Button
+              onClick={toggleLanguage}
+              variant="ghost"
+              size="sm"
+              className="w-full justify-start text-primary-foreground hover:text-accent hover:bg-transparent gap-2 mb-2"
+            >
+              <Languages className="h-4 w-4" />
+              <span>{language === "en" ? "العربية" : "English"}</span>
+            </Button>
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}

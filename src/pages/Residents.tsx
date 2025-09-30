@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ProfileCard from "@/components/ProfileCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Import images
 import ahmedImage from "@/assets/profiles/ahmed-alharthi.jpg";
@@ -19,6 +20,8 @@ import reemImage from "@/assets/profiles/reem-alshakili.jpg";
 import hamadImage from "@/assets/profiles/hamad-alghafri.jpg";
 
 const Residents = () => {
+  const { t } = useLanguage();
+  
   const organizers = [
     {
       name: "أحمد الحارثي",
@@ -117,12 +120,10 @@ const Residents = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in-down">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
-            Meet Our Innovators, Mentors, and Leaders
+            {t("residents.title")}
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Discover the brilliant minds guiding Startup Weekend – from dedicated organizers and
-            experienced judges to insightful supervisors, each contributing to an unforgettable journey
-            of innovation.
+            {t("residents.description")}
           </p>
         </div>
 
@@ -132,24 +133,24 @@ const Residents = () => {
               value="organizers" 
               className="data-[state=active]:bg-secondary data-[state=active]:text-secondary-foreground"
             >
-              Organizers
+              {t("residents.organizers")}
             </TabsTrigger>
             <TabsTrigger 
               value="judges" 
               className="data-[state=active]:bg-secondary data-[state=active]:text-secondary-foreground"
             >
-              Judges
+              {t("residents.judges")}
             </TabsTrigger>
             <TabsTrigger 
               value="supervisors" 
               className="data-[state=active]:bg-secondary data-[state=active]:text-secondary-foreground"
             >
-              Supervisors
+              {t("residents.supervisors")}
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="organizers" className="animate-fade-in-up">
-            <h2 className="text-3xl font-bold text-center mb-8">Organizers</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">{t("residents.organizers")}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {organizers.map((person, index) => (
                 <ProfileCard key={index} {...person} delay={index * 0.1} />
@@ -158,7 +159,7 @@ const Residents = () => {
           </TabsContent>
 
           <TabsContent value="judges" className="animate-fade-in-up">
-            <h2 className="text-3xl font-bold text-center mb-8">Judges</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">{t("residents.judges")}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {judges.map((person, index) => (
                 <ProfileCard key={index} {...person} delay={index * 0.1} />
@@ -167,7 +168,7 @@ const Residents = () => {
           </TabsContent>
 
           <TabsContent value="supervisors" className="animate-fade-in-up">
-            <h2 className="text-3xl font-bold text-center mb-8">Supervisors</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">{t("residents.supervisors")}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {supervisors.map((person, index) => (
                 <ProfileCard key={index} {...person} delay={index * 0.1} />
