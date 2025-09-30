@@ -26,31 +26,21 @@ const CountdownTimer = () => {
     return () => clearInterval(interval);
   }, [targetDate]);
 
-  const timeUnits = [
-    { value: timeLeft.days, label: "Days", delay: "0.8s" },
-    { value: timeLeft.hours, label: "Hours", delay: "0.9s" },
-    { value: timeLeft.minutes, label: "Minutes", delay: "1.0s" },
-    { value: timeLeft.seconds, label: "Seconds", delay: "1.1s" },
-  ];
+  const TimeUnit = ({ value, label }: { value: number; label: string }) => (
+    <div className="flex flex-col items-center animate-pulse-glow">
+      <div className="bg-white rounded-lg p-4 md:p-6 shadow-lg min-w-[80px] md:min-w-[100px]">
+        <span className="text-3xl md:text-5xl font-bold text-primary">{value}</span>
+      </div>
+      <span className="text-white text-sm md:text-base mt-2 font-medium">{label}</span>
+    </div>
+  );
 
   return (
-    <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
-      {timeUnits.map((unit, index) => (
-        <div
-          key={unit.label}
-          className="countdown-item animate-fade-in-up w-[40%] sm:w-auto"
-          style={{ animationDelay: unit.delay }}
-        >
-          <div className="pulse-number bg-white rounded-lg p-4 md:p-6 shadow-lg min-w-[80px] md:min-w-[100px]">
-            <span className="text-3xl md:text-5xl font-bold text-primary block">
-              {unit.value}
-            </span>
-          </div>
-          <span className="text-white text-sm md:text-base mt-2 font-medium block text-center">
-            {unit.label}
-          </span>
-        </div>
-      ))}
+    <div className="flex gap-4 md:gap-6 justify-center">
+      <TimeUnit value={timeLeft.days} label="Days" />
+      <TimeUnit value={timeLeft.hours} label="Hours" />
+      <TimeUnit value={timeLeft.minutes} label="Minutes" />
+      <TimeUnit value={timeLeft.seconds} label="Seconds" />
     </div>
   );
 };
