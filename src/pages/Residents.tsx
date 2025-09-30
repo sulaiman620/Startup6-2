@@ -24,93 +24,93 @@ const Residents = () => {
   
   const organizers = [
     {
-      name: "أحمد الحارثي",
+      name: t("name.ahmed"),
       role: t("role.leadOrganizer"),
-      description: "أحمد قائد ديناميكي ذو سجل حافل في تنمية المجتمع وإدارة المشاريع.",
+      description: t("desc.ahmed"),
       imagePath: ahmedImage,
     },
     {
-      name: "فاطمة المقبالي",
+      name: t("name.fatima"),
       role: t("role.logisticsCoordinator"),
-      description: "فاطمة تتفوق في الجوانب التشغيلية، من إعداد المكان إلى تخصيص الموارد.",
+      description: t("desc.fatima"),
       imagePath: fatimaImage,
     },
     {
-      name: "سارة البلوشي",
+      name: t("name.sarah"),
       role: t("role.marketingDirector"),
-      description: "سارة تقود استراتيجية التواصل والتسويق، مما يضمن وصول الحدث لأفضل المواهب.",
+      description: t("desc.sarah"),
       imagePath: sarahImage,
     },
     {
-      name: "خالد الشحي",
+      name: t("name.khalid"),
       role: t("role.volunteerManager"),
-      description: "خالد هو قلب فريق المتطوعين، يقوم بتوظيف وتنسيق الأفراد المخلصين.",
+      description: t("desc.khalid"),
       imagePath: khalidImage,
     },
   ];
 
   const judges = [
     {
-      name: "د. ليلى العامري",
+      name: t("name.layla"),
       role: t("role.ventureCapitalist"),
-      description: "د. ليلى تجلب خبرة واسعة في الاستثمار في الشركات الناشئة والإرشاد الاستراتيجي.",
+      description: t("desc.layla"),
       imagePath: laylaImage,
     },
     {
-      name: "محمد الهنائي",
+      name: t("name.mohammed"),
       role: t("role.angelInvestor"),
-      description: "رائد أعمال متسلسل ناجح، محمد يكرس الآن وقته لتوجيه الشركات الناشئة والاستثمار فيها.",
+      description: t("desc.mohammed"),
       imagePath: mohammedImage,
     },
     {
-      name: "منى الفارسي",
+      name: t("name.mona"),
       role: t("role.techInnovator"),
-      description: "منى شخصية رائدة في تطوير الذكاء الاصطناعي، معروفة بتطبيقاتها الرائدة.",
+      description: t("desc.mona"),
       imagePath: monaImage,
     },
     {
-      name: "عمر البحري",
+      name: t("name.omar"),
       role: t("role.startupMentor"),
-      description: "عمر قد وجه العديد من الشركات الناشئة من خلال تحدياتها الأولية بخبرته ونصائحه.",
+      description: t("desc.omar"),
       imagePath: omarImage,
     },
     {
-      name: "نورة الكلباني",
+      name: t("name.noura"),
       role: t("role.legalAdvisor"),
-      description: "كمحامية متمرسة، نورة تقدم التوجيه الأساسي حول حماية المشاريع الجديدة.",
+      description: t("desc.noura"),
       imagePath: nouraImage,
     },
     {
-      name: "يوسف الرواحي",
+      name: t("name.youssef"),
       role: t("role.productDesignLead"),
-      description: "يوسف متخصص في التصميم المتمحور حول المستخدم، مساعداً الفرق على بناء منتجات بديهية.",
+      description: t("desc.youssef"),
       imagePath: youssefImage,
     },
   ];
 
   const supervisors = [
     {
-      name: "عائشة السعيدي",
+      name: t("name.aisha"),
       role: t("role.technicalSupervisor"),
-      description: "عائشة تقدم إرشاداً تقنياً عميقاً في الذكاء الاصطناعي والتعلم الآلي.",
+      description: t("desc.aisha"),
       imagePath: aishaImage,
     },
     {
-      name: "طارق المعمري",
+      name: t("name.tariq"),
       role: t("role.businessModelSupervisor"),
-      description: "طارق متخصص في نماذج الأعمال والأطر المالية، يساعد الفرق على توضيح عرض القيمة.",
+      description: t("desc.tariq"),
       imagePath: tariqImage,
     },
     {
-      name: "ريم الشكيلي",
+      name: t("name.reem"),
       role: t("role.pitchCoach"),
-      description: "ريم خبيرة في التحدث أمام الجمهور والعروض التقديمية، تدرب الفرق على تقديم عروض مقنعة.",
+      description: t("desc.reem"),
       imagePath: reemImage,
     },
     {
-      name: "حمد الغافري",
+      name: t("name.hamad"),
       role: t("role.designThinkingSupervisor"),
-      description: "حمد يسهل ورش عمل التفكير التصميمي، يساعد الفرق على التعاطف مع المستخدمين وتطوير الحلول.",
+      description: t("desc.hamad"),
       imagePath: hamadImage,
     },
   ];

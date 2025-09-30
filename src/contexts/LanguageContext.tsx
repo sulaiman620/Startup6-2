@@ -71,6 +71,46 @@ const translations = {
     "role.pitchCoach": "Pitch Coach",
     "role.designThinkingSupervisor": "Design Thinking Supervisor",
     
+    // Names - Organizers
+    "name.ahmed": "Ahmed Al-Harthi",
+    "name.fatima": "Fatima Al-Maqbali",
+    "name.sarah": "Sarah Al-Balushi",
+    "name.khalid": "Khalid Al-Shehhi",
+    
+    // Names - Judges
+    "name.layla": "Dr. Layla Al-Amri",
+    "name.mohammed": "Mohammed Al-Hinai",
+    "name.mona": "Mona Al-Farsi",
+    "name.omar": "Omar Al-Bahri",
+    "name.noura": "Noura Al-Kalbani",
+    "name.youssef": "Youssef Al-Rawahi",
+    
+    // Names - Supervisors
+    "name.aisha": "Aisha Al-Saidi",
+    "name.tariq": "Tariq Al-Maamari",
+    "name.reem": "Reem Al-Shakili",
+    "name.hamad": "Hamad Al-Ghafri",
+    
+    // Descriptions - Organizers
+    "desc.ahmed": "Ahmed is a dynamic leader with a proven track record in community development and project management.",
+    "desc.fatima": "Fatima excels at the operational side of things, from venue setup to resource allocation.",
+    "desc.sarah": "Sarah drives the communication and marketing strategy, ensuring the event reaches top talent.",
+    "desc.khalid": "Khalid is the heart of the volunteer team, recruiting and coordinating dedicated individuals.",
+    
+    // Descriptions - Judges
+    "desc.layla": "Dr. Layla brings extensive experience in startup investment and strategic mentorship.",
+    "desc.mohammed": "A successful serial entrepreneur, Mohammed now dedicates his time to mentoring and investing in startups.",
+    "desc.mona": "Mona is a leading figure in AI development, known for her cutting-edge applications.",
+    "desc.omar": "Omar has guided numerous startups through their early challenges with his expertise and advice.",
+    "desc.noura": "As an experienced lawyer, Noura provides essential guidance on protecting new ventures.",
+    "desc.youssef": "Youssef specializes in user-centered design, helping teams build intuitive products.",
+    
+    // Descriptions - Supervisors
+    "desc.aisha": "Aisha provides deep technical guidance in artificial intelligence and machine learning.",
+    "desc.tariq": "Tariq specializes in business models and financial frameworks, helping teams clarify their value proposition.",
+    "desc.reem": "Reem is an expert in public speaking and presentations, training teams to deliver compelling pitches.",
+    "desc.hamad": "Hamad facilitates design thinking workshops, helping teams empathize with users and develop solutions.",
+    
     // Registration Page
     "registration.title": "Ready to Innovate? Register Now!",
     "registration.description": "Join us for an exhilarating weekend of innovation, networking, and launching your startup idea. Don't miss this opportunity to connect with mentors, judges, and fellow entrepreneurs. Secure your spot today!",
@@ -140,6 +180,46 @@ const translations = {
     "role.businessModelSupervisor": "مشرف نموذج الأعمال",
     "role.pitchCoach": "مدرب العروض التقديمية",
     "role.designThinkingSupervisor": "مشرف التفكير التصميمي",
+    
+    // Names - Organizers
+    "name.ahmed": "أحمد الحارثي",
+    "name.fatima": "فاطمة المقبالي",
+    "name.sarah": "سارة البلوشي",
+    "name.khalid": "خالد الشحي",
+    
+    // Names - Judges
+    "name.layla": "د. ليلى العامري",
+    "name.mohammed": "محمد الهنائي",
+    "name.mona": "منى الفارسي",
+    "name.omar": "عمر البحري",
+    "name.noura": "نورة الكلباني",
+    "name.youssef": "يوسف الرواحي",
+    
+    // Names - Supervisors
+    "name.aisha": "عائشة السعيدي",
+    "name.tariq": "طارق المعمري",
+    "name.reem": "ريم الشكيلي",
+    "name.hamad": "حمد الغافري",
+    
+    // Descriptions - Organizers
+    "desc.ahmed": "أحمد قائد ديناميكي ذو سجل حافل في تنمية المجتمع وإدارة المشاريع.",
+    "desc.fatima": "فاطمة تتفوق في الجوانب التشغيلية، من إعداد المكان إلى تخصيص الموارد.",
+    "desc.sarah": "سارة تقود استراتيجية التواصل والتسويق، مما يضمن وصول الحدث لأفضل المواهب.",
+    "desc.khalid": "خالد هو قلب فريق المتطوعين، يقوم بتوظيف وتنسيق الأفراد المخلصين.",
+    
+    // Descriptions - Judges
+    "desc.layla": "د. ليلى تجلب خبرة واسعة في الاستثمار في الشركات الناشئة والإرشاد الاستراتيجي.",
+    "desc.mohammed": "رائد أعمال متسلسل ناجح، محمد يكرس الآن وقته لتوجيه الشركات الناشئة والاستثمار فيها.",
+    "desc.mona": "منى شخصية رائدة في تطوير الذكاء الاصطناعي، معروفة بتطبيقاتها الرائدة.",
+    "desc.omar": "عمر قد وجه العديد من الشركات الناشئة من خلال تحدياتها الأولية بخبرته ونصائحه.",
+    "desc.noura": "كمحامية متمرسة، نورة تقدم التوجيه الأساسي حول حماية المشاريع الجديدة.",
+    "desc.youssef": "يوسف متخصص في التصميم المتمحور حول المستخدم، مساعداً الفرق على بناء منتجات بديهية.",
+    
+    // Descriptions - Supervisors
+    "desc.aisha": "عائشة تقدم إرشاداً تقنياً عميقاً في الذكاء الاصطناعي والتعلم الآلي.",
+    "desc.tariq": "طارق متخصص في نماذج الأعمال والأطر المالية، يساعد الفرق على توضيح عرض القيمة.",
+    "desc.reem": "ريم خبيرة في التحدث أمام الجمهور والعروض التقديمية، تدرب الفرق على تقديم عروض مقنعة.",
+    "desc.hamad": "حمد يسهل ورش عمل التفكير التصميمي، يساعد الفرق على التعاطف مع المستخدمين وتطوير الحلول.",
     
     // Registration Page
     "registration.title": "هل أنت مستعد للابتكار؟ سجل الآن!",
