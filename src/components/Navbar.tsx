@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,13 +8,12 @@ const Navbar = () => {
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/residents", label: "Residents" },
-    { to: "/registration", label: "Registration" },
   ];
 
-  const externalLink = {
-    href: "https://www.techstars.com/",
-    label: "Tech Starts"
-  };
+  const externalLinks = [
+    { href: "https://www.techstars.com/", label: "Tech Starts" },
+    { href: "https://www.techstars.com/", label: "Registration" }
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass animate-fade-in-down">
@@ -40,19 +38,17 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <a
-              href={externalLink.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-foreground hover:text-accent transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-[-4px] after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
-            >
-              {externalLink.label}
-            </a>
-            <a href="https://www.techstars.com/" target="_blank" rel="noopener noreferrer">
-              <Button variant="default" size="sm" className="gradient-secondary hover:opacity-90 ripple">
-                Register
-              </Button>
-            </a>
+            {externalLinks.map((link) => (
+              <a
+                key={link.href + link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground hover:text-accent transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-[-4px] after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,20 +78,18 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <a
-              href={externalLink.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsOpen(false)}
-              className="block py-2 text-primary-foreground hover:text-accent transition-colors"
-            >
-              {externalLink.label}
-            </a>
-            <a href="https://www.techstars.com/" target="_blank" rel="noopener noreferrer" className="block">
-              <Button variant="default" size="sm" className="gradient-secondary hover:opacity-90 mt-4 w-full">
-                Register
-              </Button>
-            </a>
+            {externalLinks.map((link) => (
+              <a
+                key={link.href + link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="block py-2 text-primary-foreground hover:text-accent transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
         )}
       </div>
