@@ -17,9 +17,14 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass animate-fade-in-down">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <NavLink to="/" className="text-xl font-bold text-primary-foreground hover:text-accent transition-colors">
+          <a 
+            href="https://www.techstars.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-xl font-bold text-primary-foreground hover:text-accent transition-colors"
+          >
             Startup Weekend Sur
-          </NavLink>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
