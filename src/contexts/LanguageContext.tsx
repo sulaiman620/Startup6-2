@@ -55,7 +55,7 @@ const translations = {
     
     // Home Page
     "home.hero.title": "مرحباً بكم في ستارت أب ويكند",
-    "home.hero.subtitle": "عملي حول الفضاء الخارجي",
+    "home.hero.subtitle": "أفكار بلا حدود",
     "home.hero.coming": "قريباً",
     "home.hero.description": "استعد لعطلة نهاية أسبوع مليئة بالإبداع والابتكار وريادة الأعمال في ستارت أب ويكند صور!",
     "home.what.title": "ما هو ستارت أب ويكند؟",
