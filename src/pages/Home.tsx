@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Countdown */}
-      <section className="relative gradient-primary min-h-[600px] flex items-center justify-center overflow-hidden animate-gradient">
+      <section className="relative gradient-primary min-h-[600px] flex items-center justify-center overflow-hidden animate-gradient pt-20 md:pt-24">
         <BackgroundParticles />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto glass rounded-2xl p-8 md:p-12 animate-scale-in">
