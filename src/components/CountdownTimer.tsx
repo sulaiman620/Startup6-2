@@ -27,8 +27,11 @@ const CountdownTimer = () => {
   }, [targetDate]);
 
   const TimeUnit = ({ value, label }: { value: number; label: string }) => (
-    <div className="flex flex-col items-center gap-2 animate-fade-in-up animate-pulse-glow">
-      <div className="bg-white rounded-xl p-4 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 min-w-[70px] md:min-w-[100px] animate-pulse">
+    <div className="flex flex-col items-center gap-2">
+      <div 
+        key={value}
+        className="bg-white rounded-xl p-4 md:p-6 shadow-lg min-w-[70px] md:min-w-[100px] animate-[pulse_1s_ease-in-out]"
+      >
         <span className="text-3xl md:text-5xl font-bold text-primary block text-center">
           {value.toString().padStart(2, '0')}
         </span>
