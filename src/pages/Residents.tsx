@@ -5,80 +5,80 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const Residents = () => {
   const organizers = [
     {
-      name: "Anya Sharma",
+      name: "أحمد الحارثي",
       role: "Lead Organizer",
-      description: "Anya is a dynamic leader with a proven track record in community development and project management.",
+      description: "أحمد قائد ديناميكي ذو سجل حافل في تنمية المجتمع وإدارة المشاريع.",
     },
     {
-      name: "Ben Carter",
+      name: "فاطمة المقبالي",
       role: "Logistics Coordinator",
-      description: "Ben excels at operational aspects, from venue setup to resource allocation, ensuring smooth event execution.",
+      description: "فاطمة تتفوق في الجوانب التشغيلية، من إعداد المكان إلى تخصيص الموارد.",
     },
     {
-      name: "Chloe Lee",
+      name: "سارة البلوشي",
       role: "Marketing Director",
-      description: "Chloe drives the outreach and communication strategy, ensuring the Startup Weekend reaches top talent.",
+      description: "سارة تقود استراتيجية التواصل والتسويق، مما يضمن وصول الحدث لأفضل المواهب.",
     },
     {
-      name: "David Kim",
+      name: "خالد الشحي",
       role: "Volunteer Manager",
-      description: "David is the heart of our volunteer team, recruiting and coordinating the dedicated individuals who make events shine.",
+      description: "خالد هو قلب فريق المتطوعين، يقوم بتوظيف وتنسيق الأفراد المخلصين.",
     },
   ];
 
   const judges = [
     {
-      name: "Dr. Elena Petrova",
+      name: "د. ليلى العامري",
       role: "Venture Capitalist",
-      description: "Dr. Petrova brings extensive experience in early-stage startup investment and strategic guidance.",
+      description: "د. ليلى تجلب خبرة واسعة في الاستثمار في الشركات الناشئة والإرشاد الاستراتيجي.",
     },
     {
-      name: "Michael Chen",
+      name: "محمد الهنائي",
       role: "Angel Investor",
-      description: "A successful serial entrepreneur, Michael now dedicates his time to mentoring and investing in startups.",
+      description: "رائد أعمال متسلسل ناجح، محمد يكرس الآن وقته لتوجيه الشركات الناشئة والاستثمار فيها.",
     },
     {
-      name: "Sophia Rodriguez",
+      name: "منى الفارسي",
       role: "Tech Innovator",
-      description: "Sophia is a leading figure in AI development, known for her groundbreaking applications.",
+      description: "منى شخصية رائدة في تطوير الذكاء الاصطناعي، معروفة بتطبيقاتها الرائدة.",
     },
     {
-      name: "Omar Hassan",
+      name: "عمر البحري",
       role: "Startup Mentor",
-      description: "Omar has guided numerous startups through their initial challenges with his expertise and advice.",
+      description: "عمر قد وجه العديد من الشركات الناشئة من خلال تحدياتها الأولية بخبرته ونصائحه.",
     },
     {
-      name: "Isabel Garcia",
+      name: "نورة الكلباني",
       role: "Legal Advisor",
-      description: "As a seasoned attorney, Isabel provides essential guidance on protecting new ventures.",
+      description: "كمحامية متمرسة، نورة تقدم التوجيه الأساسي حول حماية المشاريع الجديدة.",
     },
     {
-      name: "Liam O'Connell",
+      name: "يوسف الرواحي",
       role: "Product Design Lead",
-      description: "Liam specializes in user-centered design and product experience, helping teams build intuitive products.",
+      description: "يوسف متخصص في التصميم المتمحور حول المستخدم، مساعداً الفرق على بناء منتجات بديهية.",
     },
   ];
 
   const supervisors = [
     {
-      name: "Sarah Miller",
+      name: "عائشة السعيدي",
       role: "Technical Supervisor (AI/ML)",
-      description: "Sarah provides deep technical mentorship in artificial intelligence and machine learning.",
+      description: "عائشة تقدم إرشاداً تقنياً عميقاً في الذكاء الاصطناعي والتعلم الآلي.",
     },
     {
-      name: "Tom Wicks",
+      name: "طارق المعمري",
       role: "Business Model Supervisor",
-      description: "Tom specializes in business models and financial frameworks, helping teams articulate their value proposition.",
+      description: "طارق متخصص في نماذج الأعمال والأطر المالية، يساعد الفرق على توضيح عرض القيمة.",
     },
     {
-      name: "Jessica Tran",
+      name: "ريم الشكيلي",
       role: "Pitch Coach",
-      description: "Jessica is an expert in public speaking and presentation, coaching teams to deliver compelling pitches.",
+      description: "ريم خبيرة في التحدث أمام الجمهور والعروض التقديمية، تدرب الفرق على تقديم عروض مقنعة.",
     },
     {
-      name: "Alex Volkov",
+      name: "حمد الغافري",
       role: "Design Thinking Supervisor",
-      description: "Alex facilitates design thinking workshops, helping teams empathize with users and prototype solutions.",
+      description: "حمد يسهل ورش عمل التفكير التصميمي، يساعد الفرق على التعاطف مع المستخدمين وتطوير الحلول.",
     },
   ];
 

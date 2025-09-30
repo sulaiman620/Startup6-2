@@ -26,23 +26,23 @@ All colors MUST be HSL.
     --muted: 232 34% 63%;
     --muted-foreground: 228 30% 50%;
 
-    --accent: 232 34% 63%;
+    --accent: 243 57% 80%;
     --accent-foreground: 228 65% 31%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 243 57% 90%;
-    --input: 243 57% 90%;
+    --border: 243 57% 85%;
+    --input: 243 57% 85%;
     --ring: 228 65% 31%;
 
     --radius: 0.75rem;
 
-    /* Custom theme colors */
-    --deep-blue: 228 65% 31%;
-    --medium-blue: 242 46% 43%;
-    --light-blue: 232 34% 63%;
-    --very-light: 243 57% 80%;
+    /* Custom theme colors - Using exact colors: #1A2A80, #3B38A0, #7A85C1, #B2B0E8 */
+    --deep-blue: 228 65% 31%;        /* #1A2A80 */
+    --medium-blue: 242 46% 43%;      /* #3B38A0 */
+    --light-blue: 232 34% 63%;       /* #7A85C1 */
+    --very-light: 243 57% 80%;       /* #B2B0E8 */
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(228 65% 31%) 0%, hsl(242 46% 43%) 100%);
